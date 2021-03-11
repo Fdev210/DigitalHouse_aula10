@@ -9,7 +9,8 @@ const listaUsuario = [
     'Caique'
 ]
 
-app.use(express.static(path.join(__dirname, '/src/public/')));
+//app.use(express.static(path.join(__dirname, '/src/public/')));
+app.use(express.static(path.join(__dirname, '/src/style/')));
 
     //Route params
 app.get('/hello/:usuario', (req, res) => {

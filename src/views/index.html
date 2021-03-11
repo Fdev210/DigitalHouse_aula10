@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8"/>
         <title>Meus pokemons</title>
+
+        <link href="../styles/index.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
+        <header class="titulo">
             <h1>PokeAPI</h1>
             <div>
                 <img 
@@ -16,23 +18,22 @@
             </div>
         </header>
         <main>
-            <div>
-                <label>Pokemon: </label>
+            <div id="pesquisa">
                 <input type="text" placeholder="qual pokemon ?"/>
             </div>
 
-            <section>
-                <div>
+            <section class="lista">
+                <div class="pokemon">
                     <strong>pokemon</strong>
                     <img src="" />
                 </div>
-                <div>
+                <div class="pokemon">
                     <strong>pokemon</strong>
-                    <img src= "img/pikachu.jpg" alt="desenho do pikachu dando um olá" width="200px"/>
+                    <img src= "../public/img/pikachu.jpg" alt="desenho do pikachu dando um olá" width="200px"/>
                 </div>
-                <div>
+                <div class="pokemon">
                     <strong>pokemon</strong>
-                    <img src= "img/pineco.png" alt="pokemon pineco cascalho empedrado" width="200px"/>
+                    <img src= "../public/img/pineco.png" alt="pokemon pineco cascalho empedrado" width="200px"/>
                 </div>
             </section>
         </main>
