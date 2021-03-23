@@ -36,6 +36,34 @@
                     <img src= "../public/img/pineco.png" alt="pokemon pineco cascalho empedrado" width="200px"/>
                 </div>
             </section>
+
+            <form class="form" method="POST" action="/enviar-mensagem">
+                <h2>Entre em contato conosco</h2>
+                <label for="name">Nome: </label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                />
+
+                <label for="email">Email: </label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                />
+
+                <label for="email">Comentário: </label>
+                <textarea 
+                        name="comentario" 
+                        id="comentario" 
+                        rows="8" 
+                        placeholder="Digite o seu comentário aqui"
+                        maxlength="100"
+                ></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
         </main>
         <footer>
             <span>Desonvolvido por Fabiano Sant'Anna</span>

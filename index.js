@@ -9,8 +9,11 @@ const listaUsuario = [
     'Caique'
 ]
 
-//app.use(express.static(path.join(__dirname, '/src/public/')));
-app.use(express.static(path.join(__dirname, '/src/style/')));
+app.use(express.static(path.join(__dirname, '/src/public/')));
+//app.use(express.static(path.join(__dirname, '/src/style/')));
+
+//expressencoded
+app.use(express.urlencoded({extended: true}));
 
     //Route params
 app.get('/hello/:usuario', (req, res) => {
@@ -31,6 +34,13 @@ app.get('/usuarios', (req, res) => {
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/src/views/index.html'))
 })
+
+app.post('/enviar-mensagem', (req, res) => {
+    console.log(req.body);
+    //const {name, email, comentario} = req.body;
+
+    return res.send('OK');
+});
 
 app.listen(8080, () => console.log('servidor rodando na porta'));
  
